@@ -16,3 +16,6 @@ deploy:
   platforms:
     dev:
       defaultHostname: true
+    base:
+      host:
+        url: swarm.local
