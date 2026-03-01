@@ -18,4 +18,4 @@ deploy:
       defaultHostname: true
     prod:
       host:
-        url: swarmlocal.duvalhub.com
+        url: swarmlocal3.duvalhub.com
