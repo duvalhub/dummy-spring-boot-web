@@ -12,6 +12,6 @@ public class DummyController {
 
   @RequestMapping
   public String hello() {
-    return "Hello from dummy!";
+    return "Hello from super dummy!";
   }
 }
