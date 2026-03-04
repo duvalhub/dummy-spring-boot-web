@@ -2,16 +2,28 @@ package com.duvalhub.rnd.dummyspringbootweb;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 @Slf4j
 public class DummyController {
+  private final DummyRepository dummyRepository;
 
-  @RequestMapping
-  public String hello() {
-    return "Hello from super dummy!";
+  @GetMapping
+  public List<Dummy> hello() {
+    return dummyRepository.findAll();
+  }
+
+  @PostMapping
+  public Dummy createDummy(Dummy dummy) {
+    return dummyRepository.save(dummy);
+  }
+
+  @DeleteMapping("/{id}")
+  public void delete(@PathVariable Long id) {
+    dummyRepository.deleteById(id);
   }
 }
