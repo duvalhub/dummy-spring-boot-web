@@ -18,7 +18,7 @@ public class DummyController {
   }
 
   @PostMapping
-  public Dummy createDummy(Dummy dummy) {
+  public Dummy createDummy(@RequestBody Dummy dummy) {
     return dummyRepository.save(dummy);
   }
 

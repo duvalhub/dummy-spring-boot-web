@@ -8,7 +8,8 @@ build:
   container_template: openjdk
   container_version: 25-jre-alpine
   destination: "target/*.jar"
-
+docker:
+  registry: registry.swarmlocal3.duvalhub.com
 deploy:
   database:
     enabled: true
