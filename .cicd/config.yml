@@ -10,6 +10,7 @@ build:
   destination: "target/*.jar"
 docker:
   registry: registry.swarmlocal3.duvalhub.com
+  credentialId: DUVALHUB_PRIVATE_REGISTRY_CREDENTIALS
 deploy:
   database:
     enabled: true
