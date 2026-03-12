@@ -14,6 +14,7 @@ public class DummyController {
 
   @GetMapping
   public List<Dummy> hello() {
+
     return dummyRepository.findAll();
   }
 
