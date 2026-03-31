@@ -1,6 +1,9 @@
 parent: "duvalhub/dummies-parent.yml"
 app:
   version_control: maven
+docker:
+  registry: registry.swarmlocal4.duvalhub.com
+  credentialId: DUVALHUB_PRIVATE_REGISTRY_CREDENTIALS
 build:
   builder: maven
   builder_version: 3.9.12-eclipse-temurin-25-noble
@@ -8,9 +11,6 @@ build:
   container_template: openjdk
   container_version: 25-jre-alpine
   destination: "target/*.jar"
-docker:
-  registry: registry.swarmlocal3.duvalhub.com
-  credentialId: DUVALHUB_PRIVATE_REGISTRY_CREDENTIALS
 deploy:
   database:
     enabled: true
