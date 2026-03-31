@@ -17,9 +17,9 @@ deploy:
   port: 8080
   platforms:
     base:
-      baseDomainName: swarmlocal3.duvalhub.com
+      baseDomainName: swarmlocal4.duvalhub.com
     dev:
       defaultHostname: true
     prod:
       host:
-        url: swarmlocal3.duvalhub.com
+        url: swarmlocal4.duvalhub.com
