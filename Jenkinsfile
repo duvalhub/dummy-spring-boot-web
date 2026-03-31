@@ -1,6 +1,6 @@
 @Library([
-    'continuous-deployment-library@improvement/pipeline-retrieve-config-from-app-repo',
-    'shared-library@improvement/pipeline-retrieve-config-from-app-repo'
+    'continuous-deployment-library@master',
+    'shared-library@master'
 ]) _
 
 continuousDeployment()
